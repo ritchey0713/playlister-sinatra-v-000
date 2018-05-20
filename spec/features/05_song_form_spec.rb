@@ -110,10 +110,10 @@ describe "Song Forms" do
       end
     end
 
-    context "changing a song's genres" do
-      it "has a checkbox element on the form" do
-        expect(page.body).to include("checkbox")
-      end
+    # context "changing a song's genres" do
+    #   it "has a checkbox element on the form" do
+    #     expect(page.body).to include("checkbox")
+    #   end
 
       # it "updates the song's genres" do
       #   uncheck "New Age Garbage"
@@ -127,11 +127,11 @@ describe "Song Forms" do
       #   expect(page).not_to have_content("New Age Garbage")
       # end
 
-      it "renders to the song show page" do
-        uncheck "Hippity Hop"
-        check "New Age Garbage"
-        click_on "Save"
-        expect(page.current_path).to eq("/songs/that-one-with-the-guitar")
-      end
+      # it "renders to the song show page" do
+      #   uncheck "Hippity Hop"
+      #   check "New Age Garbage"
+      #   click_on "Save"
+      #   expect(page.current_path).to eq("/songs/that-one-with-the-guitar")
+      # end
     end
   end
